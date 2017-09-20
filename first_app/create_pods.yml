@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: moviesearch-nodejs-service
+  name: moviesearchnodejs-service
   labels:
     app: moviesearchnodejs
 spec:

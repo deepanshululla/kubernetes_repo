@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: moviesearchnodejs-deployment
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: moviesearchnodejs
+    spec:
+      containers:
+      - name: k8s-demo
+        image: deepanshululla/movie_search_nodejs
+        ports:
+        - name: nodejs-port
+          containerPort: 3000
+      nodeSelector:
+        hardware: high-spec
