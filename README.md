@@ -13,6 +13,8 @@ automatically.
 * So essentially it creates a deployment object where we can give our definition of desired state and hence makes it easier to create,update, do rolling updates etc.
 * deploy_example.yml is used to create a deployment object.
 * node-selector.yml is an example of how we can run pods on a specific node. Hint we need to label the nodes first and then specify them in pod definition.
+* health-check.yml is a yml file which does HTTP health checks on our application. 
+
 
 
 
